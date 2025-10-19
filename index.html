@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <article data-testid="test-profile-card">
+        <figure><img class="profile_picture" data-testid="test-user-avater" src="./images/profile_pics.png" alt="user avater"/></figure>
+        <h1 data-testid="test-user-name">Joshua Iyanuoluwa</h1>
+        <p data-testid="test-user-bio">A passionate frontend developer learning to build beautiful, accessible web interfaces.</p>
+        <p data-testid="test-user-time" id="clock">CURRENT TIME: </p>
+        <ul data-testid="test-user-social-links" class="social_links">
+            <li data-testid="test-user-social-twitter">
+                <a href="https://x.com/iynulwa_divine" target="_blank" rel="noopener noreferrer"><img class="logos" src="./images/twitter.png" alt="to twitter"/></a>
+            </li>
+            <li data-testid="test-user-social-instagram">
+                <a href="https://www.instagram.com/iynulwa/" target="_blank" rel="noopener noreferrer"><img class="logos" src="./images/instagram (1).png" alt="to instagram"/></a>
+            </li>
+            <li data-testid="test-user-social-github">
+                <a href="https://github.com/iynulwa" target="_blank" rel="noopener noreferrer"><img class="logos" src="./images/github.png" alt="to github"/></a>
+            </li>
+            <li data-testid="test-user-social-linkedIn">
+                <a href="https://www.linkedin.com/in/iyanuoluwa-joshua-84589837b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><img class="logos" src="./images/linkedin.png" alt="to linkedin"/></a>
+            </li>
+        </ul>
+        <section class="likes_dislikes">
+            <ul data-testid="test-user-hobbies">
+                <h2>Likes</h2>
+                <li>Coding</li>
+                <li>Design</li>
+                <li>Football and Volleyball</li>
+                <li>Reading</li>
+            </ul>
+            <ul data-testid="test-user-dislikes">
+                <h2>Dislikes</h2>
+                <li></li>
+                <li>Traffic jams</li>
+            </ul>
+        </section>
+    </article>
+    <script src="index.js"></script>
+</body>
+</html>

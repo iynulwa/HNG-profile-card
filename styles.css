@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+/* CSS reset start */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+	font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* remove animation for people who've turned them off  */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::after,
+  *::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+li {
+    list-style: none;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* CSS reset end */
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 30rem;
+}
+
+article > * {
+  margin-bottom: 2rem;
+}
+
+.profile_picture {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.social_links {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  line-height: 0;
+}
+
+.social_links img{
+  display: block;
+}
+
+.social_links li {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.likes_dislikes {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.logos {
+  width: 50%;
+}
