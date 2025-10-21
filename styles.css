@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-
 /* CSS reset start */
 
 * {
@@ -37,11 +36,16 @@ ol[role='list'] {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  font-family: 'Manrope', sans-serif;
+  background-color: hsl(148, 38%, 91%);
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  padding: 1rem;
 }
 
 h1, h2, h3, h4,
@@ -98,17 +102,25 @@ li {
 
 /* CSS reset end */
 
+/* Profile page start */
+
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 30rem;
+  max-width: 25rem;
   padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
 }
 
 article > * {
-  margin-bottom: 2rem;
+  margin-block-end: 1.25rem;
+}
+
+article > h1 {
+  text-align: center;
 }
 
 .profile_picture {
@@ -117,7 +129,27 @@ article > * {
   height: auto;
   aspect-ratio: 1;
   border-radius: 50%;
-  border: solid purple 2px;
+  border: solid hsl(148, 38%, 91%) 2px;
+}
+
+.bio {
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.btn-container .contact-btn, .about-btn {
+  text-decoration: none;
+  padding: 1rem;
+  background-color: hsl(148, 38%, 91%);
+  color: hsl(169, 82%, 27%);
+  border-radius: .5rem;
+  text-align: center;
+  cursor: pointer;
 }
 
 .social_links {
@@ -127,25 +159,106 @@ article > * {
   gap: 1.5rem;
 }
 
-.social_links a {
-  width: fit-content;
-}
-
 .likes_dislikes {
   display: flex;
-  align-items: flex-start;
-  gap: 4rem;
-  margin-top: 2rem;
+  gap: 2rem;
+  margin-block-start: 1rem;
 }
 
 .likes_dislikes ul li {
   text-align: left;
 }
 
-h2 {
+h2, p {
   text-align: left;
 }
 
 .logos {
   display: block;
+  width: 2rem;
+  height: auto;
 }
+
+/* Profile page end */
+
+/* Contact me page start */
+
+.contact-info {
+  text-align: center;
+  max-width: 55ch;
+}
+
+form {
+  max-width: 40rem;
+  width: 100%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-block-start: 2rem;
+}
+
+.required {
+  color: red;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+}
+
+.submit {
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  border: 0;
+}
+
+dialog {
+  max-width: 30ch;
+  margin: auto;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: solid hsl(169, 82%, 27%) 1px;
+}
+
+dialog div {
+  margin: 1rem 0;
+}
+
+.modal-btn {
+  width: 6rem;
+  background-color: hsl(169, 82%, 27%);
+  color: white;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+/* Contact me page end */
+
+/* About me page start */
+
+.about-container {
+  background-color: white;
+  max-width: 40rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-block-start: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section li {
+  list-style: inside;
+}
+
+/* About me page end */

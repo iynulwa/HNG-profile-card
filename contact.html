@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/TORA.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Contact Me</h1>
+        <p class="contact-info">Get in touch with me and send me a clear, concise message. I'll respond as soon as possible</p>
+        <form novalidate>
+            <div>
+                <label for="fullname">Full Name <span class="required">*</span></label><br>
+                <input data-testid="test-contact-name" id="fullname" type="text" required>
+                <span class="error" data-testid="test-contact-error-name" id="fullname-error"></span> 
+            </div>
+            <div>
+                <label for="email">Email <span class="required">*</span></label><br>
+                <input data-testid="test-contact-email" id="email" type="email" required>
+                <span class="error" data-testid="test-contact-error-email" id="email-error"></span>
+            </div>
+            <div>
+                <label for="subject">Subject <span class="required">*</span></label><br>
+                <input data-testid="test-contact-subject" id="subject" type="text" required>
+                <span class="error" data-testid="test-contact-error-subject" id="subject-error"></span>
+            </div>
+            <div>
+                <label for="message">Message <span class="required">*</span></label><br>
+                <textarea data-testid="test-contact-message" id="message" name="message" rows="5" cols="30" required></textarea>
+                <span class="error" data-testid="test-contact-error-message" id="message-error"></span>
+            </div>
+            <input data-testid="test-contact-submit" type="submit" class="submit" id="submit" value="Submit">
+        </form>
+        <dialog>
+            <div>
+                <h2>Message Sent!</h2>
+                <p>Thanks for completing the form. We'll be in touch soon!</p>
+            </div>
+            <button class="modal-btn">Close</button>
+        </dialog>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
