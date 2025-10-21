@@ -209,6 +209,10 @@ form {
   font-size: 0.85rem;
 }
 
+.error-border {
+  border: 1px solid red;
+}
+
 input, textarea {
   width: 100%;
   padding: 0.7rem;
@@ -231,7 +235,7 @@ dialog {
 }
 
 dialog div {
-  margin: 1rem 0;
+  margin-block-end: 1rem;
 }
 
 .modal-btn {
